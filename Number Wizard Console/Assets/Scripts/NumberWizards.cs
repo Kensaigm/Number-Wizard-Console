@@ -33,7 +33,7 @@ public class NumberWizards : MonoBehaviour {
             print("Down arrow pressed.");
         }
 
-        if (Input.GetKeyDown(KeyCode.Equals))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             print("I won!");
         }
