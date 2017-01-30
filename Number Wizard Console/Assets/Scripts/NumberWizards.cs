@@ -23,9 +23,19 @@ public class NumberWizards : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown("space"))
+		if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            print("space key was pressed");
+            print("Up arrow pressed.");
+        }
+
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            print("Down arrow pressed.");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Equals))
+        {
+            print("I won!");
         }
 	}
 }
