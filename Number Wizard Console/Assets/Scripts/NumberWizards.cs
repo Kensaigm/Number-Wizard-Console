@@ -10,7 +10,12 @@ public class NumberWizards : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		print ("Welcome to Number Wizard");
+        StartGame();
+	}
+
+	void StartGame()
+    {
+        print("Welcome to Number Wizard");
         print("Pick a Number in your head, but don't tell me!");
 
         print("The highest number you can pick is: " + max);
@@ -20,8 +25,12 @@ public class NumberWizards : MonoBehaviour {
         print("Up Arrow for higher, Down Arrow for lower, and Return for equals.");
 
         max += 1;
-	}
-	
+    }
+
+    void NextGuess()
+    {
+
+    }
 	// Update is called once per frame
 	void Update () {
 
