@@ -20,24 +20,39 @@ public class NumberWizards : MonoBehaviour {
         min = 1;
         guess = 500;
 
+
         print("");
-        print("BBB  EEEEE GGGGG III N   N");
-        print("B  B E     G      I  NN  N");
-        print("BBB  EEEEE G  GG  I  N N N");
-        print("B  B E     G   G  I  N  NN");
-        print("BBB  EEEEE GGGGG III N   N");
+
+        print("BBBB  EEEEE GGGGG III N   N");
+
+        print("B   B E     G      I  NN  N");
+
+        print("BBBB  EEEEE G  GG  I  N N N");
+
+        print("B   B E     G   G  I  N  NN");
+
+        print("BBBB  EEEEE GGGGG III N   N");
+
         print("");
+
 
         print("Welcome to Number Wizard");
+
         print("Pick a Number in your head, but don't tell me!");
 
+
         print("The highest number you can pick is: " + max);
+
         print("The lowest number you can pick is: " + min);
 
+
         print("Is the number higher or lower than " + guess + "?");
+
         print("Up Arrow for higher, Down Arrow for lower, and Return for equals.");
 
+
         max += 1;
+
     }
 
     void NextGuess()
