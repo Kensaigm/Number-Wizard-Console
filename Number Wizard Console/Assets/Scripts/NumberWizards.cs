@@ -15,6 +15,19 @@ public class NumberWizards : MonoBehaviour {
 
 	void StartGame()
     {
+
+        max = 1000;
+        min = 1;
+        guess = 500;
+
+        print("");
+        print("BBB  EEEEE GGGGG III N   N");
+        print("B  B E     G      I  NN  N");
+        print("BBB  EEEEE G  GG  I  N N N");
+        print("B  B E     G   G  I  N  NN");
+        print("BBB  EEEEE GGGGG III N   N");
+        print("");
+
         print("Welcome to Number Wizard");
         print("Pick a Number in your head, but don't tell me!");
 
@@ -30,7 +43,8 @@ public class NumberWizards : MonoBehaviour {
     void NextGuess()
     {
         guess = (max + min) / 2;
-        print("Higher or lower than " + guess);
+        print("Is the number higher or lower than " + guess + "?");
+        print("Up Arrow for higher, Down Arrow for lower, and Return for equals.");
     }
 	// Update is called once per frame
 	void Update () {
@@ -38,6 +52,14 @@ public class NumberWizards : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Return))
         {
             print("I won!");
+            print("Press the return key to play again.");
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                StartGame();
+            } else
+            {
+                Application.Quit();
+            }
         } else if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             // print("Up arrow pressed.");
